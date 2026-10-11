@@ -1,0 +1,346 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c0\c84706;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Dark Gothic Band Link Hub</title>\
+    <style>\
+        /* Monochromatic Gothic Layout & Aesthetics */\
+        * \{\
+            box-sizing: border-box;\
+            margin: 0;\
+            padding: 0;\
+        \}\
+        body \{\
+            background-color: #050505;\
+            color: #e0e0e0;\
+            font-family: 'Courier New', Courier, monospace;\
+            padding: 40px 20px;\
+            display: flex;\
+            flex-direction: column;\
+            align-items: center;\
+        \}\
+        .container \{\
+            max-width: 680px;\
+            width: 100%;\
+            display: flex;\
+            flex-direction: column;\
+            gap: 40px;\
+        \}\
+        section \{\
+            background: #111111;\
+            border: 1px solid #333333;\
+            padding: 25px;\
+            border-radius: 4px;\
+        \}\
+        h2 \{\
+            font-size: 1.1rem;\
+            text-transform: uppercase;\
+            letter-spacing: 2px;\
+            border-bottom: 1px solid #333333;\
+            padding-bottom: 10px;\
+            margin-bottom: 20px;\
+            color: #ffffff;\
+        \}\
+\
+        /* 1. Header & Live Logo Custom Upload Window */\
+        .header-section \{\
+            text-align: center;\
+            padding: 40px 20px;\
+        \}\
+        .logo-upload-zone \{\
+            border: 2px dashed #444444;\
+            padding: 40px 20px;\
+            cursor: pointer;\
+            background: #161616;\
+            transition: all 0.3s ease;\
+        \}\
+        .logo-upload-zone:hover \{\
+            border-color: #888888;\
+            background: #1f1f1f;\
+        \}\
+        .logo-preview \{\
+            max-width: 100%;\
+            max-height: 180px;\
+            display: none;\
+            margin: 0 auto;\
+        \}\
+\
+        /* 2. Flat Monochromatic Connection Links */\
+        .social-icons-box \{\
+            display: flex;\
+            justify-content: center;\
+            gap: 15px;\
+            flex-wrap: wrap;\
+        \}\
+        .social-btn \{\
+            color: #888888;\
+            text-decoration: none;\
+            font-weight: bold;\
+            padding: 10px 20px;\
+            border: 1px solid #333333;\
+            background: #161616;\
+            font-size: 0.85rem;\
+            letter-spacing: 1px;\
+            transition: all 0.2s ease;\
+        \}\
+        .social-btn:hover \{\
+            color: #ffffff;\
+            border-color: #ffffff;\
+            background: #222222;\
+        \}\
+\
+        /* 3. Narrative Text Section */\
+        .bio-text \{\
+            font-size: 0.95rem;\
+            line-height: 1.6;\
+            text-align: justify;\
+            color: #b0b0b0;\
+        \}\
+\
+        /* 4. Playable Audio Architecture List */\
+        .audio-list \{\
+            display: flex;\
+            flex-direction: column;\
+            gap: 12px;\
+        \}\
+        .audio-track \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+            background: #161616;\
+            border: 1px solid #262626;\
+            padding: 15px;\
+            font-size: 0.9rem;\
+        \}\
+        .play-btn \{\
+            background: none;\
+            border: 1px solid #444444;\
+            color: #888888;\
+            padding: 4px 14px;\
+            cursor: pointer;\
+            font-family: inherit;\
+            font-size: 0.8rem;\
+        \}\
+        .play-btn:hover \{\
+            color: #ffffff;\
+            border-color: #ffffff;\
+        \}\
+\
+        /* \
+\
+\
+5. Music Video Custom Upload Slots */\
+        .video-list \{\
+            display: flex;\
+            flex-direction: column;\
+            gap: 25px;\
+        \}\
+        .video-slot \{\
+            background: #161616;\
+            border: 1px solid #262626;\
+            padding: 20px;\
+            display: flex;\
+            flex-direction: column;\
+            gap: 12px;\
+        \}\
+        .video-title-input \{\
+            background: #0d0d0d;\
+            border: 1px solid #333333;\
+            color: #ffffff;\
+            padding: 10px;\
+            font-family: inherit;\
+            width: 100%;\
+            font-size: 0.9rem;\
+        \}\
+        .video-preview-box \{\
+            width: 100%;\
+            height: 200px;\
+            background: #0d0d0d;\
+            border: 1px solid #222222;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            color: #555555;\
+            font-size: 0.8rem;\
+            cursor: pointer;\
+            overflow: hidden;\
+            position: relative;\
+        \}\
+        .video-preview-box img \{\
+            width: 100%;\
+            height: 100%;\
+            object-fit: cover;\
+        \}\
+\
+        /* 6. Static 4 x 5 Matrix Layout */\
+        .matrix-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(4, 1fr);\
+            gap: 10px;\
+        \}\
+        .matrix-item \{\
+            aspect-ratio: 1 / 1;\
+            background: #161616;\
+            border: 1px solid #2a2a2a;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            color: #444444;\
+            font-size: 0.75rem;\
+            transition: all 0.2s ease;\
+        \}\
+        .matrix-item:hover \{\
+            border-color: #777777;\
+            background: #222222;\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+<div class="container">\
+\
+    <!-- 1. Custom Band Logo Upload Header -->\
+    <section class="header-section">\
+        <div class="logo-upload-zone" onclick="document.getElementById('bandLogoInput').click()">\
+            <span id="logoUploadText">\uc0\u55357 \u56740  CLICK TO UPLOAD BAND LOGO \u55357 \u56740 </span>\
+            <input type="file" id="bandLogoInput" accept="image/*" style="display:none;" onchange="previewLogo(event)">\
+            <img id="logoImgContainer" class="logo-preview" alt="Band Logo">\
+        </div>\
+    </section>\
+\
+    <!-- 2. Monochromatic Platform Anchors -->\
+    <div class="social-icons-box">\
+        <a href="https://facebook.com" class="social-btn" target="_blank">FACEBOOK</a>\
+        <a href="https://instagram.com" class="social-btn" target="_blank">INSTAGRAM</a>\
+        <a href="https://youtube.com" class="social-btn" target="_blank">YOUTUBE</a>\
+        <a href="https://bandcamp.com" class="social-btn" target="_blank">BANDCAMP</a>\
+    </div>\
+\
+    <!-- 3. Dynamic Narrative Archive Section -->\
+    <section>\
+        <h2>Biography</h2>\
+        <div class="bio-text">\
+            Born from the static of endless winter midnights, this collective entity weaves a tapestry of low-frequency architecture and haunting, minimalist resonance. Emerging from underground shadows, the project strips away excess to reveal a raw, uncompromising structural core. Every sonic texture is built around rhythmic weight and precise tension\'97a deliberate exploration of monochromatic soundscapes. Shunning transient trends, the artistic output remains firmly rooted in dark avant-garde sensibilities, carving a distinct and cold sonic environment. This platform acts as the central vault for all creative operations, continuous updates, and archival gallery documentation.\
+        </div>\
+    </section>\
+\
+    <!-- 4. Six Linear Audio Streaming Elements -->\
+    <section>\
+        <h2>Audio Vault</h2>\
+        <div class="audio-list">\
+            <div class="audio-track"><span>01. Obsidian Fields</span><button class="play-btn">PLAY</button></div>\
+            <div class="audio-track"><span>02. Crypt Architecture</span><button class="play-btn">PLAY</button></div>\
+            <div class="audio-track"><span>03. Monolith Echoes</span><button class="play-btn">PLAY</button></div>\
+            <div class="audio-track"><span>04. Static Horizon</span><button class="play-btn">PLAY</button></div>\
+            <div class="audio-track"><span>05. Velvet Abyss</span><button class="play-btn">PLAY</button></div>\
+            <div class="audio-track"><span>06. Shroud Sequence</span><button class="play-btn">PLAY</button></div>\
+        </div>\
+    </section>\
+\
+    <!-- 5. Six Dynamic Self-Managed Video Fields -->\
+    <section>\
+        <h2>Music Videos</h2>\
+        <div class="video-list">\
+            <!-- Slot 1 -->\
+            <div class="video-slot">\
+                <input type="text" class="video-title-input" value="Track Release Title I">\
+                <div class="video-preview-box" onclick="this.nextElementSibling.click()">Click to upload thumbnail frame</div>\
+                <input type="file" accept="image/*" style="display:none;" onchange="previewVideoThumb(event, this)">\
+            </div>\
+            <!-- Slot 2 -->\
+            <div class="video-slot">\
+                <input type="text" class="video-title-input" value="Track Release Title II">\
+                <div class="video-preview-box" onclick="this.nextElementSibling.click()">Click to upload thumbnail frame</div>\
+                <input type="file" accept="image/*" style="display:none;" onchange="previewVideoThumb(event, this)">\
+            </div>\
+            <!-- Slot 3 -->\
+            <div class="video-slot">\
+                <input type="text" class="video-title-input" value="Track Release Title III">\
+                <div class="video-preview-box" onclick="this.nextElementSibling.click()">Click to upload thumbnail frame</div>\
+                <input type="file" accept="image/*" style="display:none;" onchange="previewVideoThumb(event, this)">\
+            </div>\
+            <!-- Slot 4 -->\
+            <div class="video-slot">\
+                <input type="text" class="video-title-input" value="Track Release Title IV">\
+                <div class="video-preview-box" onclick="this.nextElementSibling.click()">Click to upload thumbnail frame</div>\
+                <input type="file" accept="image/*" style="display:none;" onchange="previewVideoThumb(event, this)">\
+            </div>\
+            <!-- Slot 5 -->\
+            <div class="video-slot">\
+                <input type="text" class="video-title-input" value="Track Release Title V">\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf0 Use code with caution.\
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs26\fsmilli13333 \cf3 \strokec3 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \strokec2 Click to upload thumbnail frame\
+\
+Click to upload thumbnail frame\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 Visual Archive Matrix\
+\
+// System Logo Data Processor\
+function previewLogo(event) \{\
+const file = event.target.files[0];\
+if (file) \{\
+const reader = new FileReader();\
+reader.onload = function(e) \{\
+const img = document.getElementById('logoImgContainer');\
+img.src = e.target.result;\
+img.style.display = 'block';\
+document.getElementById('logoUploadText').style.display = 'none';\
+\};\
+reader.readAsDataURL(file);\
+\}\
+\}\
+// Video Slot Asset Tracker\
+function previewVideoThumb(event, element) \{\
+const file = event.target.files[0];\
+if (file) \{\
+const reader = new FileReader();\
+reader.onload = function(e) \{\
+const previewBox = element.previousElementSibling;\
+previewBox.innerHTML = 
+\f0\fs28 <img src="$\{e.target.result\}">
+\f1\fs32 ;\
+\};\
+reader.readAsDataURL(file);\
+\}\
+\}\
+// Build the 4x5 Image Matrix Framework\
+const gridContainer = document.getElementById('galleryGrid');\
+for (let i = 1; i <= 20; i++) \{\
+const cell = document.createElement('div');\
+cell.className = 'matrix-item';\
+cell.innerText = 
+\f0\fs28 [$\{String(i).padStart(2, '0')\}]
+\f1\fs32 ;\
+gridContainer.appendChild(cell);\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+}
